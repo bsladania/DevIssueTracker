@@ -9,11 +9,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!--Chancejs to generate unique identifier for issues-->
   <script src="http://chancejs.com/chance.min.js"></script>
+  <script src="main.js"></script>
   <title>Local Issue Tracker App</title>
   <style media="screen">
     body{
       background:gray;
       font-family: Arial, Helvetica, sans-serif;
+    }
+    .jumbotron{
+      margin-top: 30px;
     }
     h3{
       text-align:center;
@@ -60,6 +64,9 @@
           <label for="assign">Assigned To</label>
           <input type="text" class="form-control" id="issueAssign" placeholder="Enter responsible...">
         </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" onClick="saveIssue(event)">Add</button>
+        </div>
       </form>
     </div>
     <div class="row">
@@ -69,6 +76,5 @@
       </div>
     </div>
   </div>
-  <script src="main.js"></script>
 </body>
 </html>
